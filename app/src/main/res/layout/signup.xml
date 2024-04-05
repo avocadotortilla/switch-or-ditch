@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".SignUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="#fff"
+            app:srcCompat="@drawable/blue_back" />
+
+        <TextView
+            android:id="@+id/tvAvgRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="150dp"
+
+            android:fontFamily="sans-serif-thin"
+            android:gravity="left"
+            android:text="Sign Up"
+            android:textColor="#9EDEDD"
+            android:textSize="40dp"/>
+
+
+        <EditText
+            android:id="@+id/edtFirstName"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/blue_border"
+
+            android:ems="10"
+            android:fontFamily="sans-serif-medium"
+            android:hint="first name"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dp"
+            android:textColor="#9ededd"/>
+
+        <EditText
+            android:id="@+id/edtLastName"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+
+            android:background="@drawable/blue_border"
+            android:fontFamily="sans-serif-medium"
+            android:ems="10"
+            android:hint="last name"
+            android:inputType="textPersonName"
+            android:textColor="#9ededd"/>
+
+        <EditText
+            android:id="@+id/edtUsername"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+
+            android:background="@drawable/blue_border"
+            android:fontFamily="sans-serif-medium"
+            android:ems="10"
+            android:hint="email address"
+            android:inputType="textEmailAddress"
+            android:textColor="#9ededd"/>
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+
+            android:background="@drawable/blue_border"
+            android:fontFamily="sans-serif-medium"
+            android:ems="10"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:textColor="#9ededd"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+
+            android:background="@drawable/blue_filled"
+            android:fontFamily="sans-serif-medium"
+            android:text="sign up!"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

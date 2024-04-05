@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Entrance">
+
+    <TextView
+        android:id="@+id/tvSellerName"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:gravity="center"
+        android:lineSpacingExtra="-40dp"
+
+        android:fontFamily="@font/esblw"
+        android:text="switch\nor\nditch"
+        android:textColor="@color/black"
+        android:textSize="115dp"
+        android:textStyle="bold"
+
+        android:shadowColor="@color/white"
+        android:shadowRadius="200"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLoginScreen"
+
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/blue_filled"
+        android:fontFamily="sans-serif-medium"
+        android:text="Log In"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignUpScreen"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:background="@drawable/lightbuttons"
+        android:textColor="#9EDEDD"
+        android:fontFamily="sans-serif-medium"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textSize="17dp" />
+</LinearLayout>

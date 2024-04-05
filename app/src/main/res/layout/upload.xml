@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".Upload">
+
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        app:srcCompat="@drawable/camera" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonTakePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+
+            android:background="@drawable/rectangular_blue_border"
+            android:fontFamily="sans-serif-thin"
+            android:text="take photo"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonSelectPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:layout_marginLeft="10dp"
+
+            android:background="@drawable/rectangular_blue_border"
+            android:fontFamily="sans-serif-thin"
+            android:text="select photo"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/textProdName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewNumCharLeft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_weight="0"
+        android:gravity="right"
+        android:textAlignment="gravity"
+        android:textColor="#FF0000" />
+
+    <EditText
+        android:id="@+id/textDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="top"
+        android:hint="A product description"
+        android:inputType="textMultiLine"
+
+        android:maxLength="255"
+
+        android:paddingLeft="5dp"
+        android:singleLine="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvProductDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="R"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/textPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="65.00"
+            android:inputType="numberDecimal"
+            android:maxLength="13" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonPost"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/blue_filled"
+        android:layout_marginBottom="5dp"
+
+        android:text="post"
+        android:textSize="25dp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/white"/>
+
+</LinearLayout>
